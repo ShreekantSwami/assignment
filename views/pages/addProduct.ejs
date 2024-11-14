@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add products here</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="w-full h-screen flex justify-center items-center">
+    <form action="/addProduct" method="POST" class="flex flex-col gap-3">
+      <h1 class="font-medium text-xl">Data enrollment :</h1>
+      <input
+        type="Number"
+        placeholder="Enter PID"
+        name="prid"
+        class="input input-bordered w-full max-w-xs"
+      />
+      <input
+        type="text"
+        placeholder="Enter PNAME"
+        name="pname"
+        class="input input-bordered w-full max-w-xs"
+      />
+      <input
+        type="text"
+        placeholder="Category"
+        name="category"
+        class="input input-bordered w-full max-w-xs"
+      />
+
+      <input
+        type="number"
+        placeholder="Enter Price"
+        name="price"
+        class="input input-bordered w-full max-w-xs"
+      />
+      <input
+        type="number"
+        placeholder="Stock"
+        name="stock"
+        class="input input-bordered w-full max-w-xs"
+      />
+      <button type="submit" class="btn btn-outline btn-neutral shadow-2xl">
+        Submit
+      </button>
+    </form>
+  </body>
+</html>
